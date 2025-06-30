@@ -30,8 +30,8 @@ function Home() {
     const fetchProducts = async () => {
       try {
         const url = category
-          ? `http://localhost:4000/api/products?category=${category}`
-          : `http://localhost:4000/api/products`;
+          ? `https://e-commerce-website-2hpn.onrender.com/api/products?category=${category}`
+          : `https://e-commerce-website-2hpn.onrender.com/api/products`;
         const res = await axios.get(url);
         setProducts(res.data);
       } catch {
