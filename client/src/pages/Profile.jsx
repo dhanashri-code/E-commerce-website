@@ -23,13 +23,13 @@ function Profile() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const resUser = await axios.get("http://localhost:4000/api/auth/user", {
+                const resUser = await axios.get("https://e-commerce-website-2hpn.onrender.com/api/auth/user", {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 setUser(resUser.data);
 
                 if (resUser.data.isAdmin) {
-                    const resProducts = await axios.get("http://localhost:4000/api/products");
+                    const resProducts = await axios.get("https://e-commerce-website-2hpn.onrender.com/api/products");
                     const products = resProducts.data;
                     const categories = new Set(products.map(p => p.category));
                     const inStockCount = products.filter(p => p.inStock).length;
@@ -42,7 +42,7 @@ function Profile() {
                         outOfStock: outOfStockCount,
                     });
                 } else {
-                    const resOrders = await axios.get("http://localhost:4000/api/orders", {
+                    const resOrders = await axios.get("https://e-commerce-website-2hpn.onrender.com/api/orders", {
                         headers: { Authorization: `Bearer ${token}` },
                     });
                     const cart = JSON.parse(localStorage.getItem("cart")) || [];
