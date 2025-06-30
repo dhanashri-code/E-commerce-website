@@ -27,7 +27,7 @@ function Product() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/api/products/${id}`)
+      .get(`https://e-commerce-website-2hpn.onrender.com/api/products/${id}`)
       .then((res) => {
         setProduct(res.data);
         setLoading(false);
