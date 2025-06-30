@@ -45,7 +45,7 @@ function Cart() {
     };
 
     try {
-      await axios.post("http://localhost:4000/api/orders", orderData, {
+      await axios.post("https://e-commerce-website-2hpn.onrender.com/api/orders", orderData, {
         headers: { Authorization: `Bearer ${token}` },
       });
       message.success(`Order placed: ${item.title}`);
