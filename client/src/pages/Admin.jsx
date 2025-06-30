@@ -25,7 +25,7 @@ function Admin() {
   const [imageUrl, setImageUrl] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:4000/api/products").then((res) => setProducts(res.data));
+    axios.get("https://e-commerce-website-2hpn.onrender.com/api/products").then((res) => setProducts(res.data));
   }, []);
 
   const handleAdd = async (values) => {
@@ -33,13 +33,13 @@ function Admin() {
     const data = { ...values, imageURL: imageUrl };
 
     try {
-      await axios.post("http://localhost:4000/api/products", data, {
+      await axios.post("https://e-commerce-website-2hpn.onrender.com/api/products", data, {
         headers: { Authorization: `Bearer ${token}` },
       });
       message.success("Product added successfully");
       form.resetFields();
       setImageUrl("");
-      const updated = await axios.get("http://localhost:4000/api/products");
+      const updated = await axios.get("https://e-commerce-website-2hpn.onrender.com/api/products");
       setProducts(updated.data);
     } catch (err) {
       message.error("Failed to add product");
@@ -52,7 +52,7 @@ function Admin() {
     formData.append("image", file);
 
     try {
-      const res = await axios.post("http://localhost:4000/api/products/upload", formData, {
+      const res = await axios.post("https://e-commerce-website-2hpn.onrender.com/products/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setImageUrl(res.data.imageURL);
