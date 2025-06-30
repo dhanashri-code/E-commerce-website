@@ -12,7 +12,7 @@ function Login() {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:4000/api/auth/login", values);
+      const res = await axios.post("https://e-commerce-website-2hpn.onrender.com/api/auth/login", values);
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("role", res.data.user.isAdmin ? "admin" : "user");
       localStorage.setItem("userName", res.data.user.name);
