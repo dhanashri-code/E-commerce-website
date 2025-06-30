@@ -32,7 +32,7 @@ function AllProducts() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/products");
+      const res = await axios.get("https://e-commerce-website-2hpn.onrender.com/api/products");
       setProducts(res.data);
     } catch (err) {
       message.error("Failed to load products");
@@ -46,7 +46,7 @@ function AllProducts() {
   const handleDelete = async (id) => {
     const token = localStorage.getItem("token");
     try {
-      await axios.delete(`http://localhost:4000/api/products/${id}`, {
+      await axios.delete(`https://e-commerce-website-2hpn.onrender.com/api/products/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       message.success("Product deleted");
@@ -68,7 +68,7 @@ function AllProducts() {
     formData.append("image", file);
 
     try {
-      const res = await axios.post("http://localhost:4000/api/products/upload", formData, {
+      const res = await axios.post("https://e-commerce-website-2hpn.onrender.com/api/products/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setImageUrl(res.data.imageURL);
@@ -88,7 +88,7 @@ function AllProducts() {
         imageURL: imageUrl,
       };
 
-      await axios.put(`http://localhost:4000/api/products/${editingProduct._id}`, updatedData, {
+      await axios.put(`https://e-commerce-website-2hpn.onrender.com/api/products/${editingProduct._id}`, updatedData, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
