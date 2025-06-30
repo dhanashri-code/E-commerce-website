@@ -12,7 +12,7 @@ function Register() {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      await axios.post("http://localhost:4000/api/auth/register", values);
+      await axios.post("https://e-commerce-website-2hpn.onrender.com/api/auth/register", values);
       message.success("Registered successfully!");
       navigate("/login");
     } catch (err) {
