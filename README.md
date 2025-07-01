@@ -65,14 +65,14 @@ It includes user authentication, cart management, admin controls, image uploads,
 ├── client/           # React frontend
 │   └── src/
 │       ├── pages/
-│       ├── components/
+│       ├── component/
 │       ├── context/
 │       └── App.jsx
 ├── server/           # Node/Express backend
 │   ├── middleware/
 │   ├── routes/
 │   ├── models/
-│   └── server.js
+│   └── index.js
 ````
 
 ---
