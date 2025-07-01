@@ -1,4 +1,4 @@
-# 🛒 Full-Stack E-Commerce Website (MERN + Vite )
+# 🛒 Full-Stack E-Commerce Website (MERN)
 
 A complete modern e-commerce application built using **MERN Stack**, **Vite**, **Ant Design**, and **MongoDB**.
 It includes user authentication, cart management, admin controls, image uploads, and Stripe-ready checkout.
