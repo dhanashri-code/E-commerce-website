@@ -28,6 +28,10 @@ It includes user authentication, cart management, admin controls, image uploads,
 
 ---
 
+## Admin Access details 
+email - admin@gmail.com
+password - admin123
+
 ## ⚙️ Tech Stack
 
 ### 🔧 Frontend
