@@ -53,11 +53,11 @@ It includes user authentication, cart management, admin controls, image uploads,
 
 | Part       | Platform  | Link |
 |------------|-----------|------|
-| Frontend   | Netlify   | `https://your-netlify-site.netlify.app` |
-| Backend    | Render    | `https://your-render-api.onrender.com` |
+| Frontend   | Netlify   | `[https://mern-ecom-express.netlify.app/]` |
+| Backend    | Render    | `[https://e-commerce-website-2hpn.onrender.com/api/auth/register]` |
 
 ## 📂 Folder Structure
-
+````
 ├── client/           # React frontend
 │   └── src/
 │       ├── pages/
@@ -159,7 +159,7 @@ It includes user authentication, cart management, admin controls, image uploads,
 ## 👨‍💻 Author
 
 **Dhanashri Bhavsar**
-[GitHub](https://github.com/dhanashri-code) | [LinkedIn] www.linkedin.com/in/dhanashri-bhavsar
+[GitHub](https://github.com/dhanashri-code) | [LinkedIn] www.linkedin.com/in/dhanashri-bhavsar]
 
 ---
 
