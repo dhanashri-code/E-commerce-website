@@ -155,33 +155,7 @@ function Admin() {
               </Form.Item>
             </Form>
           </Card>
-
-
-          <Title level={4} style={{ color: "#0d47a1", marginBottom: 16 }}>
-            All Products
-          </Title>
-
-          <List
-            bordered
-            dataSource={products}
-            renderItem={(item) => (
-              <List.Item
-                style={{
-                  backgroundColor: "#fff8e1",
-                  borderRadius: "6px",
-                  marginBottom: "8px",
-                  padding: "16px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                }}
-              >
-                <span>{item.title}</span>
-                <span style={{ fontWeight: "bold", color: "#4caf50" }}>
-                  ${item.price}
-                </span>
-
-
-              </List.Item>
+          
             )}
           />
         </div>
