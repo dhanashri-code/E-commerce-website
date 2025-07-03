@@ -128,6 +128,10 @@ It includes user authentication, cart management, admin controls, image uploads,
    ```env
    MONGO_URI=your_mongo_db_connection
    JWT_SECRET=your_jwt_secret
+   port=
+   CLOUDINARY_NAME = 
+   CLOUDINARY_API_KEY =
+   CLOUDINARY_API_SECRET = 
    ```
 
 4. **Run locally**
