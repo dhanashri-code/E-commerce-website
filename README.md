@@ -11,6 +11,7 @@ It includes user authentication, cart management, admin controls, image uploads,
 - Add to cart, update quantity, remove item
 - Place single item orders
 - View order history
+- User Profile
 - Cart persists across sessions
 
 ### 🔐 Admin
@@ -48,7 +49,7 @@ It includes user authentication, cart management, admin controls, image uploads,
 - Multer (for image uploads)
 
 ### 📦 Other
-- Cloud Storage via external image URLs (Amazon CDN or dummy placeholders)
+- Cloud Storage via external image URLs (Cloudinary)
 - Role-based route protection (admin/user)
 
 ---
@@ -158,7 +159,6 @@ It includes user authentication, cart management, admin controls, image uploads,
 
 * Stripe or Razorpay integration
 * Multi-item checkout
-* User profile page
 * Admin analytics
 * Product reviews & ratings
 
