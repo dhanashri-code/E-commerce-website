@@ -27,7 +27,7 @@ function Dashboard() {
     }
 
     axios
-      .get("http://localhost:4000/api/orders", {
+      .get("https://e-commerce-website-2hpn.onrender.com/api/orders", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setOrders(res.data))
