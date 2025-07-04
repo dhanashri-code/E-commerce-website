@@ -72,7 +72,7 @@ export default function AdminOrders() {
     ) : (
       <List
         itemLayout="vertical"
-        dataSource={orders}
+        dataSource={[...orders].reverse()}
         renderItem={order => (
           <Card
             key={order._id}
