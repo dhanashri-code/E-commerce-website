@@ -20,6 +20,8 @@ import {
   DashboardOutlined,
   ProfileOutlined,
   MenuOutlined,
+  OrderedListOutlined,
+  UnorderedListOutlined
 } from "@ant-design/icons";
 
 const { Header } = Layout;
@@ -77,8 +79,13 @@ function Navbar() {
           },
           {
             key: "allproducts",
-            icon: <AppstoreAddOutlined />,
+            icon: <UnorderedListOutlined />,
             label: <Link to="/admin/products">All Products</Link>,
+          },
+        {
+            key: "viewAllOrders",
+            icon: <OrderedListOutlined />,
+            label: <Link to="/admin/orders">View All Orders</Link>,
           },
         ]
       : []),
