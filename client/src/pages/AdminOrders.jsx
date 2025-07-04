@@ -27,7 +27,7 @@ export default function AdminOrders() {
     }
 
     axios
-      .get("http://localhost:4000/api/orders/all", {
+      .get("https://e-commerce-website-2hpn.onrender.com/api/orders/all", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(res => setOrders(res.data))
