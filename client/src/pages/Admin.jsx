@@ -155,9 +155,7 @@ function Admin() {
               </Form.Item>
             </Form>
           </Card>
-          
-            )}
-          />
+        
         </div>
       </div>
     </>
