@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Card, List, Typography, message, Empty } from "antd";
+import { Card, List, Typography, message, Empty, Divider } from "antd";
 import Navbarr from "../component/Navbarr";
 
 const { Title, Text } = Typography;
@@ -12,7 +12,7 @@ function Dashboard() {
     const token = localStorage.getItem("token");
 
     axios
-      .get("https://e-commerce-website-2hpn.onrender.com/api/orders", {
+      .get("http://localhost:4000/api/orders", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setOrders(res.data))
@@ -46,17 +46,24 @@ function Dashboard() {
               <Card
                 key={order._id}
                 style={{
-                  marginBottom: "16px",
+                  marginBottom: "1px",
                   borderRadius: "10px",
                   backgroundColor: "#e3f2fd",
                   border: "1px solid #90caf9",
                 }}
                 title={
-                  <div style={{ display: "flex", justifyContent: "" }}>
-                    <Text strong style={{ color: "#0d47a1" }}>
-                      Order Total -
+                  <div
+                    style={{
+                      display: "flex",
+
+                      alignItems: "center",
+                    }}
+                  >
+                    <Text strong style={{ color: "#0d47a1", marginRight: "10px" }}>
+                      Order Total :
                     </Text>
-                    <Text type="success">${order.total.toFixed(2)}</Text>
+
+                    <Text type="success"> ${order.total.toFixed(2)}</Text>
                   </div>
                 }
                 extra={
@@ -68,14 +75,22 @@ function Dashboard() {
                 <List
                   size="small"
                   dataSource={order.items}
-                  renderItem={(item) => (
-                    <List.Item key={item.productId._id}>
-                      <Text>
+                  renderItem={(item) => {
+                    const productName = item.productId?.title ?? "Unknown Product";
+                    const qty = item.quantity ?? 0;
 
-                        <strong>Qty:</strong> {item.quantity}
-                      </Text>
-                    </List.Item>
-                  )}
+                    return (
+                      <List.Item key={item.productId?._id || Math.random()}>
+                        <Text>
+                          <strong>Product Name:</strong> {productName}
+                        </Text>{" "}
+                        <br />
+                        <Text>
+                          <strong>Qty:</strong> {qty}
+                        </Text>
+                      </List.Item>
+                    );
+                  }}
                 />
               </Card>
             )}
