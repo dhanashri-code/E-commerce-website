@@ -17,6 +17,7 @@ It includes user authentication, cart management, admin controls, image uploads,
 ### 🔐 Admin
 - Add, update, delete products with image upload
 - View all products
+- View Recieved order history by User
 - Filter by category
 - Dashboard view
 - Role-based access: only admins see admin options
