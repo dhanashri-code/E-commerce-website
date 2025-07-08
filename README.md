@@ -60,7 +60,7 @@ It includes user authentication, cart management, admin controls, image uploads,
 | Part       | Platform  | Link |
 |------------|-----------|------|
 | Frontend   | Netlify   | `[https://mern-ecom-express.netlify.app/]` |
-| Backend    | Render    | `[https://e-commerce-website-2hpn.onrender.com/api/auth/register]` |
+| Backend    | Render    | `[https://e-commerce-website-2hpn.onrender.com/]` |
 
 ## 📂 Folder Structure
 ````
