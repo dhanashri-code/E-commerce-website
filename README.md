@@ -168,7 +168,7 @@ It includes user authentication, cart management, admin controls, image uploads,
 ## 👨‍💻 Author
 
 **Dhanashri Bhavsar**
-[GitHub](https://github.com/dhanashri-code) | [LinkedIn] [www.linkedin.com/in/dhanashri-bhavsar]
+[GitHub](https://github.com/dhanashri-code) | [LinkedIn] (www.linkedin.com/in/dhanashri-bhavsar)
 
 ---
 
